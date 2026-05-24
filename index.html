@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zasya | Portofolio Hobi</title>
+    <meta name="description" content="Selamat datang di portofolio saya. Saya adalah Zasya (airy-07), seorang hobiis pemrograman web yang senang membuat proyek-proyek sederhana menggunakan Next.js dan Firebase.">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVIGATION BAR
+         ========================================== -->
+    <nav class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <div class="logo" id="site-logo">Zasya.</div>
+            <ul class="nav-menu" id="nav-menu-list">
+                <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+                <li><a href="#about" class="nav-link" id="link-about">Tentang</a></li>
+                <li><a href="#skills" class="nav-link" id="link-skills">Keahlian</a></li>
+                <li><a href="#projects" class="nav-link" id="link-projects">Proyek</a></li>
+                <li><a href="#contact" class="nav-link" id="link-contact">Kontak</a></li>
+            </ul>
+            <div style="display: flex; gap: 1.5rem; align-items: center;">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="mobile-nav-toggle" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-greeting">Halo, Saya Zasya! 👋</span>
+                    <h1 class="hero-title" id="hero-main-title">Saya adalah seorang</h1>
+                    <div class="hero-typewriter">
+                        <span id="typewriter-text">Hobbyist Coder</span><span class="typewriter-cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        <span style="display: block; font-style: italic; color: var(--accent-teal); margin-bottom: 1rem;">
+                            "Full-time learner, part-time bug creator. Building cool stuff with code 🚀"
+                        </span>
+                        Saya suka mengeksplorasi dunia pemrograman web dan Next.js di waktu luang. Bagi saya, menulis kode adalah hobi yang seru untuk merealisasikan ide-ide menarik.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" id="cta-view-projects">Lihat Proyek <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                        <a href="#contact" class="btn btn-secondary" id="cta-contact-me">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <div class="hero-avatar-frame">
+                        <div class="hero-avatar-inner">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--accent-purple)" />
+                                        <stop offset="50%" stop-color="var(--accent-blue)" />
+                                        <stop offset="100%" stop-color="var(--accent-teal)" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Creative dynamic programming icon structure -->
+                                <rect x="50" y="50" width="100" height="100" rx="20" fill="url(#hero-grad)" opacity="0.15"/>
+                                <path d="M 60 70 L 40 90 L 60 110" stroke="url(#hero-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                <path d="M 140 70 L 160 90 L 140 110" stroke="url(#hero-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                <path d="M 110 60 L 90 120" stroke="url(#hero-grad)" stroke-width="8" stroke-linecap="round" fill="none" />
+                                <circle cx="100" cy="150" r="10" fill="url(#hero-grad)"/>
+                                <circle cx="70" cy="150" r="6" fill="url(#hero-grad)" opacity="0.5"/>
+                                <circle cx="130" cy="150" r="6" fill="url(#hero-grad)" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <main>
+        <section class="about reveal" id="about">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Sedikit cerita mengenai hobi mengoding saya di waktu luang.</p>
+                <div class="about-grid">
+                    <div class="about-img-box">
+                        <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="background: var(--bg-secondary);">
+                            <!-- Clean developer setup illustration -->
+                            <rect x="50" y="260" width="300" height="20" rx="10" fill="var(--text-muted)" opacity="0.2"/>
+                            <rect x="80" y="100" width="240" height="150" rx="8" fill="var(--bg-tertiary)" stroke="var(--border-color)" stroke-width="2"/>
+                            <rect x="90" y="110" width="220" height="110" rx="4" fill="var(--bg-primary)"/>
+                            <path d="M 150 250 L 180 280 L 220 280 L 250 250 Z" fill="var(--text-muted)" opacity="0.3"/>
+                            <!-- Code lines inside screen -->
+                            <line x1="105" y1="125" x2="150" y2="125" stroke="var(--accent-purple)" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="160" y1="125" x2="200" y2="125" stroke="var(--accent-blue)" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="105" y1="145" x2="240" y2="145" stroke="var(--text-secondary)" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="105" y1="165" x2="180" y2="165" stroke="var(--accent-teal)" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="190" y1="165" x2="260" y2="165" stroke="var(--text-muted)" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="105" y1="185" x2="140" y2="185" stroke="var(--accent-purple)" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="about-content">
+                        <p class="about-text">
+                            Mengoding adalah salah satu hobi favorit saya. Berawal dari rasa penasaran tentang bagaimana internet bekerja, saya mulai belajar membuat halaman website sendiri dari dasar secara otodidak.
+                        </p>
+                        <p class="about-text">
+                            Bagi saya, ini adalah media kreatif yang menantang. Di sela-sela kesibukan utama, saya suka meluangkan waktu luang untuk mengeksplorasi HTML, CSS, dan JavaScript demi kesenangan membuat sesuatu yang interaktif dari nol.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item glass-card">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Proyek Hobi</span>
+                            </div>
+                            <div class="stat-item glass-card">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Tahun Mengulik</span>
+                            </div>
+                            <div class="stat-item glass-card">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Kesenangan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SKILLS SECTION
+             ========================================== -->
+        <section class="skills reveal" id="skills">
+            <div class="container">
+                <h2 class="section-title">Keahlian Saya</h2>
+                <p class="section-subtitle">Teknologi dan tools yang saya gunakan untuk mengubah ide menjadi produk digital.</p>
+                <div class="skills-grid">
+                    
+                    <!-- Front-End -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-code"></i> Front-End</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>HTML & CSS</span><span>75%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>JavaScript</span><span>60%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="60%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Next.js / React</span><span>65%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back-End -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-server"></i> Back-End / Cloud</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Node.js / Express</span><span>35%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="35%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Firebase</span><span>60%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="60%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Databases (MySQL / Firestore)</span><span>45%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="45%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Design -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Design</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git & GitHub</span><span>65%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="65%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Figma (UI/UX)</span><span>50%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="50%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Responsive Layouts</span><span>60%</span></div>
+                                <div class="skill-bar-container"><div class="skill-bar-progress" data-width="60%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             PROJECTS SECTION
+             ========================================== -->
+        <section class="projects reveal" id="projects">
+            <div class="container">
+                <h2 class="section-title">Proyek Latihan</h2>
+                <p class="section-subtitle">Beberapa hasil karya latihan saya saat mempelajari dasar-dasar pemrograman web dan desain.</p>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+                    <button class="filter-btn" data-filter="web" id="filter-web">Web App</button>
+                    <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile App</button>
+                    <button class="filter-btn" data-filter="ui" id="filter-ui">UI/UX Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card" data-category="web mobile" id="project-card-1">
+                        <div class="project-img-container">
+                            <img src="finance-airy-logo.png" alt="Finance Airy Logo">
+                            <div class="project-overlay">
+                                <a href="https://finance-airy.com/" target="_blank" class="project-overlay-btn" aria-label="Lihat Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="#" class="project-overlay-btn" aria-label="Lihat Source"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">Firebase</span>
+                                <span class="project-tag">Web & Android</span>
+                                <span class="project-tag">AI Assistant</span>
+                                <span class="project-tag">98% Done</span>
+                            </div>
+                            <h3 class="project-title">Finance Airy</h3>
+                            <p class="project-desc">Aplikasi asisten pencatat dan pengelola keuangan pribadi berbasis web dan Android yang dibantu oleh teknologi AI untuk memberikan rekomendasi finansial cerdas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card" data-category="web" id="project-card-2">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #14b8a6, #3b82f6);">
+                                <rect x="30" y="30" width="290" height="140" rx="10" fill="#ffffff" opacity="0.1"/>
+                                <rect x="70" y="60" width="210" height="80" rx="5" fill="#ffffff" opacity="0.15"/>
+                                <text x="175" y="105" font-family="'Outfit', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">Kost Airy</text>
+                            </svg>
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn" aria-label="Lihat Demo"><i class="fa-solid fa-link"></i></a>
+                                <a href="#" class="project-overlay-btn" aria-label="Lihat Source"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">Tailwind CSS</span>
+                                <span class="project-tag">Management</span>
+                                <span class="project-tag">40% Done</span>
+                            </div>
+                            <h3 class="project-title">Kost Airy (Web & Management)</h3>
+                            <p class="project-desc">Portal informasi kost interaktif beserta sistem dashboard manajemen pengelolaan sewa kost untuk pemilik dan calon penghuni.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card" data-category="web" id="project-card-3">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">
+                                <rect x="30" y="30" width="290" height="140" rx="10" fill="#ffffff" opacity="0.1"/>
+                                <circle cx="100" cy="100" r="30" fill="#ffffff" opacity="0.2"/>
+                                <circle cx="250" cy="100" r="30" fill="#ffffff" opacity="0.2"/>
+                                <text x="175" y="105" font-family="'Outfit', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">POS Kasir</text>
+                            </svg>
+                            <div class="project-overlay">
+                                <a href="#" class="project-overlay-btn" aria-label="Lihat Demo"><i class="fa-solid fa-link"></i></a>
+                                <a href="#" class="project-overlay-btn" aria-label="Lihat Source"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">POS System</span>
+                                <span class="project-tag">UI Dev</span>
+                                <span class="project-tag">10% Done</span>
+                            </div>
+                            <h3 class="project-title">POS & Kasir Digital</h3>
+                            <p class="project-desc">Aplikasi Point of Sale (POS) dan sistem kasir digital sederhana untuk mempermudah pencatatan transaksi penjualan secara cepat.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             CONTACT SECTION
+             ========================================== -->
+        <section class="contact reveal" id="contact">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="section-subtitle">Ingin berkolaborasi atau punya pertanyaan? Mari diskusikan proyek impian Anda.</p>
+                <div class="contact-grid">
+                    
+                    <div class="contact-info-panel">
+                        <div class="contact-heading-box">
+                            <h3>Mari Bekerja Sama!</h3>
+                            <p>Hubungi saya melalui informasi di bawah atau gunakan formulir di samping untuk mengirim pesan instan.</p>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-card glass-card">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-meta">
+                                    <span class="label">Email</span>
+                                    <span class="val">wanschool04@gmail.com</span>
+                                </div>
+                            </div>
+                             <div class="contact-card glass-card">
+                                 <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                 <div class="contact-meta">
+                                     <span class="label">Lokasi</span>
+                                     <span class="val">Balikpapan, Indonesia</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/airy-07" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel glass-card">
+                        <form id="contact-form" autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                                <label for="form-name" class="form-label">Nama Lengkap</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                                <label for="form-email" class="form-label">Alamat Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                                <label for="form-message" class="form-label">Pesan Anda</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                                Kirim Pesan <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">Zasya.</div>
+            <p class="footer-copyright">&copy; 2026 Zasya. Semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
