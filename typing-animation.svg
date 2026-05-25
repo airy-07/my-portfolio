@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 50" width="100%" height="50">
+  <style>
+    .typing-rect {
+      animation: typing 4s steps(72, end) forwards;
+    }
+    .cursor-g {
+      animation: move-cursor 4s steps(72, end) forwards;
+    }
+    .cursor {
+      animation: blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 730px; }
+    }
+    @keyframes move-cursor {
+      from { transform: translateX(0); }
+      to { transform: translateX(710px); }
+    }
+    @keyframes blink {
+      from, to { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+  <clipPath id="clip">
+    <rect class="typing-rect" x="30" y="0" width="0" height="50" />
+  </clipPath>
+  
+  <!-- Terminal Prompt -->
+  <text x="10" y="30" font-family="'Fira Code', 'Courier New', Courier, monospace" font-size="16" fill="#10b981" font-weight="bold">
+    <tspan fill="#6b7280">> </tspan>
+    <tspan clip-path="url(#clip)">Full-time learner, part-time bug creator. Building cool stuff with code 🚀</tspan>
+  </text>
+  
+  <!-- Typing Cursor -->
+  <g class="cursor-g">
+    <rect class="cursor" x="30" y="15" width="8" height="17" fill="#10b981" />
+  </g>
+</svg>

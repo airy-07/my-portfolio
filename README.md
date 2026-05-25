@@ -1,5 +1,9 @@
 # 🌟 Website Portofolio Saya
 
+<p align="left">
+  <img src="typing-animation.svg" alt="Typewriter Animation" />
+</p>
+
 Website portofolio sederhana buatan saya untuk menampilkan beberapa proyek Next.js & Firebase yang saya ulik di waktu luang sebagai hobi.
 
 👉 **Tonton di sini:** [https://airy-07.github.io/my-portfolio/](https://airy-07.github.io/my-portfolio/)
