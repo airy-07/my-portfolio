@@ -23,16 +23,16 @@
 
 ---
 
-### 💫 Tentang Saya
+### 💫 About Me
 
-Saya adalah seorang **Hobbyist Coder** yang senang mengulik baris kode bersama asisten AI (seperti Gemini, Claude, dan ChatGPT) untuk membangun berbagai ide menarik. Bagi saya, belajar pemrograman adalah hobi yang sangat seru dan menantang untuk mengisi waktu luang!
+I am a **Hobbyist Coder** who loves exploring code alongside AI assistants (like Gemini, Claude, and ChatGPT) to build exciting projects. For me, learning programming is a fun and challenging hobby to fill my spare time!
 
-- 🔭 **Proyek Latihan yang Sedang Saya Kembangkan:**
-  - **[Finance Airy](https://finance-airy.com/)** - Aplikasi pengelolaan keuangan pribadi berbasis AI (Tech Stack: Next.js & Firebase).
-  - **Kost Airy** - Web manajemen & portal kost-kostan modern yang sedang saya pelajari pembuatannya.
-- 🌱 **Fokus Belajar Saat Ini:** Belajar membuat website modern menggunakan Next.js, Tailwind CSS, dan Firebase dengan bantuan kecerdasan buatan (AI).
-- ✉️ **Hubungi Saya:** [wanschool04@gmail.com](mailto:wanschool04@gmail.com)
-- ⚡ **Fakta Menarik:** *"Hobi ngoding dibantu AI, hobi bikin bug diselesaikan AI juga! 🤖🚀"*
+- 🔭 **My Current Projects:**
+  - **[Finance Airy](https://finance-airy.com/)** - An AI-powered personal finance management app (Tech Stack: Next.js & Firebase).
+  - **Kost Airy** - A modern boarding house management portal I'm currently building to learn more.
+- 🌱 **Current Learning Focus:** Mastering modern web development using Next.js, Tailwind CSS, and Firebase with the help of artificial intelligence (AI).
+- ✉️ **Get in Touch:** [wanschool04@gmail.com](mailto:wanschool04@gmail.com)
+- ⚡ **Fun Fact:** *"Coding with AI is my hobby, and creating bugs for AI to fix is half the fun! 🤖🚀"*
 
 ---
 
