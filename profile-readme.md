@@ -12,9 +12,9 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/normal-badge.png?key=airy-07&type=style-flat&label=Visits&color=2ea44f" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=airy-07&color=2ea44f&style=flat&label=Profile+Views" alt="Profile Views" />
   <img src="https://img.shields.io/github/stars/airy-07/my-portfolio?style=flat&color=2ea44f&label=Stars" alt="Stars" />
-  <img src="https://img.shields.io/github/commit-activity/m/airy-07/my-portfolio?style=flat&color=2ea44f&label=Commits%20This%20Month" alt="Commits" />
+  <img src="https://img.shields.io/github/commit-activity/m/airy-07/my-portfolio?style=flat&color=2ea44f&label=Commits" alt="Commits" />
 </p>
 
 ---
