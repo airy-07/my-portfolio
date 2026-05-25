@@ -17,6 +17,10 @@
   <img src="https://img.shields.io/github/last-commit/airy-07/my-portfolio?style=flat&color=2ea44f&label=Last%20Commit" alt="Last Commit" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/airy-07/my-portfolio/main/cat.gif" width="75" alt="Cute Pixel Cat Walk" />
+</p>
+
 ---
 
 ### 💫 Tentang Saya
