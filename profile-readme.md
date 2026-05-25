@@ -8,7 +8,7 @@
 
 ```markdown
 <p align="center">
-  <img src="banner.png" alt="Zasya's Profile Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/airy-07/my-portfolio/main/banner.png" alt="Zasya's Profile Banner" width="100%" />
 </p>
 
 <p align="center">
